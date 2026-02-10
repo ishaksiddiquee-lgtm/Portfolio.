@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISA. | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1 class="logo-text">Ishaq Siddique</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#websites" class="nav-link">Purchase Websites</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="dark-mode-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section with Dark Background -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <span class="greeting" id="dynamicGreeting">HI, I'M ISHAQ SIDDIQUE AKBAR!</span>
+                <h1 class="hero-title" id="dynamicTitle">CREATIVE DEVELOPER</h1>
+                <p class="hero-description" id="dynamicBio">My name is Ishaq Siddique Akbar. I am a passionate and dedicated web developer with a strong interest in building modern, user-friendly, and responsive websites. I have experience working with HTML, CSS, JavaScript, and modern web technologies. I enjoy learning new tools and frameworks and continuously improving my development skills. My goal is to create high-quality digital solutions that solve real-world problems and provide a great user experience.</p>
+                <div class="hero-buttons fade-in delay-1">
+                    <button class="cta-button primary-btn explore-portfolio">Explore Portfolio</button>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-2">
+                <div class="square-frame">
+                    <div class="square-content">
+                        <img src="./image/WhatsApp Image 2026-02-09 at 10.56.04 PM.jpeg" alt="Ishaq Siddique Akbar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Websites Section -->
+    <section id="websites" class="websites">
+        <div class="container">
+            <h2 class="section-title fade-in">Website Categories</h2>
+            <p class="section-subtitle fade-in delay-1">Select a category to browse specialized website templates</p>
+            <div class="websites-grid" id="staticWebsitesGrid">
+                <div class="website-category fade-in delay-2" id="portfolio-category">
+                    <div class="website-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Portfolio Websites">
+                        <div class="website-overlay">
+                            <h3>Portfolio</h3>
+                            <p>Various portfolio designs</p>
+                        </div>
+                    </div>
+                    <button class="upload-btn" data-category="Portfolio">Upload File</button>
+                </div>
+                <div class="website-category fade-in delay-3" id="education-category">
+                    <div class="website-image">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Educational Websites">
+                        <div class="website-overlay">
+                            <h3>Education</h3>
+                            <p>Educational and learning platforms</p>
+                        </div>
+                    </div>
+                    <button class="upload-btn" data-category="Education">Upload File</button>
+                </div>
+                <div class="website-category fade-in delay-1" id="ecommerce-category">
+                    <div class="website-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="E-commerce Websites">
+                        <div class="website-overlay">
+                            <h3>E-Commerce</h3>
+                            <p>Online shopping and business websites</p>
+                        </div>
+                    </div>
+                    <button class="upload-btn" data-category="E-commerce">Upload File</button>
+                </div>
+                <div class="website-category fade-in delay-2" id="corporate-category">
+                    <div class="website-image">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Corporate Websites">
+                        <div class="website-overlay">
+                            <h3>Corporate</h3>
+                            <p>Professional company profiles</p>
+                        </div>
+                    </div>
+                    <button class="upload-btn" data-category="Corporate">Upload File</button>
+                </div>
+                <div class="website-category fade-in delay-3" id="blog-category">
+                    <div class="website-image">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Blog Websites">
+                        <div class="website-overlay">
+                            <h3>Blog</h3>
+                            <p>Content creators and article-based sites</p>
+                        </div>
+                    </div>
+                    <button class="upload-btn" data-category="Blog">Upload File</button>
+                </div>
+                <div class="website-category fade-in delay-1" id="landing-category">
+                    <div class="website-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Landing Pages">
+                        <div class="website-overlay">
+                            <h3>Landing Pages</h3>
+                            <p>High-conversion single-page marketing sites</p>
+                        </div>
+                    </div>
+                    <button class="upload-btn" data-category="Landing">Upload File</button>
+                </div>
+            </div>
+            <div class="websites-grid" id="dynamicWebsitesGrid" style="display:none;">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-in">Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in delay-1">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies for optimal performance and user experience.</p>
+                </div>
+                <div class="service-card fade-in delay-2">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>App Development</h3>
+                    <p>Native and cross-platform mobile applications designed to reach your audience on any device.</p>
+                </div>
+                <div class="service-card fade-in delay-3">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered designs that enhance usability and create meaningful connections with your audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in delay-1">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Project">
+                        <div class="project-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-featured online store with payment integration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in delay-2">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Project">
+                        <div class="project-overlay">
+                            <h3>Mobile Banking App</h3>
+                            <p>Secure financial application with biometric login</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in delay-3">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Project">
+                        <div class="project-overlay">
+                            <h3>Dashboard Analytics</h3>
+                            <p>Data visualization platform for business insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in delay-1" id="dynamicContactInfo">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p id="dynamicEmail">ishaksiddiquee@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p id="dynamicPhone"><a href="tel:+923062025427">92 3062025427</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p id="dynamicLocation">Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in delay-2" id="contactForm" action="https://formspree.io/f/ishaksiddiquee@email.com" method="POST">
+                    <input type="text" id="user-name" name="user-name" placeholder="Your Name" required>
+                    <input type="email" id="user-email" name="user-email" placeholder="Your Email" required>
+                    <textarea id="user-message" name="user-message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ISA. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ishaksiddiquee-lgtm" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to open a category page in a new window
+        function openCategoryPage(category) {
+            // Create the HTML for the category page
+            const categoryPage = `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>${category} Websites | ISA. Portfolio</title>
+                    <link rel="stylesheet" href="style.css">
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                </head>
+                <body>
+                    <header>
+                        <nav class="navbar">
+                            <div class="nav-container">
+                                <div class="logo">
+                                    <h1 class="logo-text">ISA.</h1>
+                                </div>
+                                <ul class="nav-menu">
+                                    <li><a href="index.html#home" class="nav-link">About</a></li>
+                                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                                    <li><a href="index.html#portfolio" class="nav-link">Projects</a></li>
+                                    <li><a href="index.html#websites" class="nav-link">Purchase Websites</a></li>
+                                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </header>
+                    
+                    <main>
+                        <section class="category-projects">
+                            <div class="container">
+                                <h2 class="section-title">${category} Websites</h2>
+                                <p class="section-subtitle">Browse our collection of ${category.toLowerCase()} websites</p>
+                                
+                                <div class="category-projects-grid" id="categoryProjectsGrid">
+                                    <p class="loading-message">Loading projects...</p>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    
+                    <footer class="footer">
+                        <div class="container">
+                            <p>&copy; 2026 ISA. All rights reserved.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </footer>
+                    
+                    <script>
+                        // Load projects for this category
+                        function loadCategoryProjects() {
+                            const categoryProjectsGrid = document.getElementById('categoryProjectsGrid');
+                            const allProjects = JSON.parse(localStorage.getItem('projects')) || [];
+                            
+                            // Filter projects by category
+                            const categoryProjects = allProjects.filter(project => project.category === '${category}');
+                            
+                            if (categoryProjects.length === 0) {
+                                categoryProjectsGrid.innerHTML = '<p class="no-projects">No projects available in this category yet.</p>';
+                                return;
+                            }
+                            
+                            // Generate HTML for each project
+                            let projectsHTML = '';
+                            categoryProjects.forEach(project => {
+                                projectsHTML += \`
+                                    <div class="website-item">
+                                        <div class="website-image">
+                                            <img src="\${project.image}" alt="\${project.title}">
+                                            <div class="website-overlay">
+                                                <h3>\${project.title}</h3>
+                                                <p>\${project.description}</p>
+                                                <div class="website-price">\$\${project.price}</div>
+                                                <a href="\${project.domain}" target="_blank" class="view-website-btn">View Website</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                \`;
+                            });
+                            
+                            categoryProjectsGrid.innerHTML = projectsHTML;
+                        }
+                        
+                        // Load projects when page loads
+                        document.addEventListener('DOMContentLoaded', loadCategoryProjects);
+                    <\/script>
+                </body>
+                </html>
+            `;
+            
+            // Open the category page in a new window
+            const newWindow = window.open('', '_blank');
+            if (newWindow) {
+                newWindow.document.write(categoryPage);
+                newWindow.document.close();
+            } else {
+                alert('Popup blocked! Please allow popups for this site to view the category page.');
+            }
+        }
+
+        // Load dynamic content from API
+        async function loadDynamicContent() {
+            try {
+                const response = await fetch('/api/data');
+                if (response.ok) {
+                    const data = await response.json();
+                    const identity = data.identity || {};
+
+                    // Update the greeting to include the saved name
+                    if (identity.name) {
+                        document.getElementById('dynamicGreeting').textContent = `HI, I'M ${identity.name.toUpperCase()}!`;
+                    }
+
+                    if (identity.title) {
+                        document.getElementById('dynamicTitle').textContent = identity.title;
+                    }
+
+                    if (identity.bio) {
+                        document.getElementById('dynamicBio').textContent = identity.bio;
+                    }
+
+                    // Update contact information if available
+                    if (identity.email) {
+                        document.getElementById('dynamicEmail').textContent = identity.email;
+                    }
+
+                    if (identity.phone) {
+                        document.getElementById('dynamicPhone').textContent = identity.phone;
+                    }
+
+                    if (identity.location) {
+                        document.getElementById('dynamicLocation').textContent = identity.location;
+                    }
+                } else {
+                    console.error('Failed to load dynamic content');
+                }
+            } catch (error) {
+                console.error('Error loading dynamic content:', error);
+            }
+        }
+
+        // Load dynamic projects from API
+        async function loadDynamicProjects() {
+            try {
+                const staticWebsitesGrid = document.getElementById('staticWebsitesGrid');
+                const dynamicWebsitesGrid = document.getElementById('dynamicWebsitesGrid');
+
+                const response = await fetch('/api/data');
+                if (response.ok) {
+                    const data = await response.json();
+                    const projects = data.projects || [];
+
+                    if (projects.length === 0) {
+                        // If no projects in API, keep the static grid visible
+                        staticWebsitesGrid.style.display = 'grid';
+                        dynamicWebsitesGrid.style.display = 'none';
+                        return;
+                    }
+
+                    // Switch to dynamic grid
+                    staticWebsitesGrid.style.display = 'none';
+                    dynamicWebsitesGrid.style.display = 'grid';
+
+                    // Clear the dynamic grid
+                    dynamicWebsitesGrid.innerHTML = '';
+
+                    // Group projects by category
+                    const projectsByCategory = {};
+                    projects.forEach(project => {
+                        if (!projectsByCategory[project.category]) {
+                            projectsByCategory[project.category] = [];
+                        }
+                        projectsByCategory[project.category].push(project);
+                    });
+
+                    // Create a card for each category
+                    Object.keys(projectsByCategory).forEach(category => {
+                        const categoryProjects = projectsByCategory[category];
+                        // Use the first project in the category as the representative image
+                        const representativeProject = categoryProjects[0];
+
+                        const categoryCard = document.createElement('div');
+                        categoryCard.className = 'website-category';
+                        categoryCard.onclick = function() { openCategoryPage(category); };
+                        categoryCard.innerHTML = `
+                            <div class="website-image">
+                                <img src="${representativeProject.image}" alt="${category} Websites">
+                                <div class="website-overlay">
+                                    <h3>${category}</h3>
+                                    <p>${categoryProjects.length} project(s) available</p>
+                                </div>
+                            </div>
+                        `;
+
+                        dynamicWebsitesGrid.appendChild(categoryCard);
+                    });
+                } else {
+                    console.error('Failed to load projects');
+                }
+            } catch (error) {
+                console.error('Error loading dynamic projects:', error);
+            }
+        }
+
+        // Load dynamic content when page loads
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadDynamicContent();
+            await loadDynamicProjects();
+
+            // Listen for updates from other tabs using localStorage
+            window.addEventListener('storage', function(e) {
+                if (e.key === 'identityUpdated' || e.key === 'projectsUpdated') {
+                    // Small delay to ensure data is written before reloading
+                    setTimeout(async () => {
+                        await loadDynamicContent();
+                        await loadDynamicProjects();
+                    }, 100);
+                }
+            });
+            
+            // Periodically check for updates (every 5 seconds)
+            setInterval(async () => {
+                await loadDynamicContent();
+                await loadDynamicProjects();
+            }, 5000);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navbar = document.querySelector('.navbar');
+        const explorePortfolioBtn = document.querySelector('.explore-portfolio');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 204, 255, 0.2)';
+            } else {
+                navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Make the "Explore Portfolio" button functional
+        if (explorePortfolioBtn) {
+            explorePortfolioBtn.addEventListener('click', function() {
+                // Find the portfolio section
+                const portfolioSection = document.querySelector('#portfolio, .portfolio');
+                if (portfolioSection) {
+                    portfolioSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // If no portfolio section exists, scroll to services section
+                    const servicesSection = document.querySelector('#services, .services');
+                    if (servicesSection) {
+                        servicesSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        }
+
+        // Make the "Purchase Websites" category images functional
+        document.getElementById('portfolio-category').addEventListener('click', function() {
+            openCategoryPage('Portfolio');
+        });
+
+        document.getElementById('education-category').addEventListener('click', function() {
+            openCategoryPage('Education');
+        });
+
+        document.getElementById('ecommerce-category').addEventListener('click', function() {
+            openCategoryPage('E-commerce');
+        });
+
+        document.getElementById('corporate-category').addEventListener('click', function() {
+            openCategoryPage('Corporate');
+        });
+
+        document.getElementById('blog-category').addEventListener('click', function() {
+            openCategoryPage('Blog');
+        });
+
+        document.getElementById('landing-category').addEventListener('click', function() {
+            openCategoryPage('Landing');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission handled by Formspree
+        
+        // Upload functionality for all categories
+        const password = 'Pakistan@321'; // New password for all categories
+        
+        // Add event listeners to all upload buttons
+        document.querySelectorAll('.upload-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent triggering the category page
+                
+                const enteredPassword = prompt('Please enter the password to access upload functionality:');
+                
+                if (enteredPassword === password) {
+                    const category = this.getAttribute('data-category');
+                    // Create upload modal with the selected category
+                    createUploadModal(category);
+                } else if (enteredPassword !== null) {
+                    alert('Incorrect password!');
+                }
+            });
+        });
+        
+        function createUploadModal(selectedCategory) {
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+            overlay.style.zIndex = '1000';
+            overlay.style.display = 'flex';
+            overlay.style.alignItems = 'center';
+            overlay.style.justifyContent = 'center';
+            
+            // Create modal
+            const modal = document.createElement('div');
+            modal.style.backgroundColor = '#1e293b';
+            modal.style.padding = '2rem';
+            modal.style.borderRadius = '10px';
+            modal.style.width = '90%';
+            modal.style.maxWidth = '500px';
+            modal.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+            modal.style.color = '#e2e8f0';
+            
+            modal.innerHTML = `
+                <h3 style="color: #00ccff; margin-top: 0; margin-bottom: 1.5rem; text-align: center;">Upload New Project - ${selectedCategory}</h3>
+                <form id="uploadForm">
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #94a3b8;">Domain Link:</label>
+                        <input type="text" id="domain" placeholder="https://example.com or example.com" style="width: 100%; padding: 0.7rem; border: 1px solid #334155; border-radius: 5px; background: #0f172a; color: #e2e8f0;" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #94a3b8;">Project Title:</label>
+                        <input type="text" id="title" placeholder="Enter project title" style="width: 100%; padding: 0.7rem; border: 1px solid #334155; border-radius: 5px; background: #0f172a; color: #e2e8f0;" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #94a3b8;">Price ($):</label>
+                        <input type="number" id="price" placeholder="Enter price" style="width: 100%; padding: 0.7rem; border: 1px solid #334155; border-radius: 5px; background: #0f172a; color: #e2e8f0;" required min="0">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #94a3b8;">Image URL:</label>
+                        <input type="text" id="image" placeholder="https://example.com/image.jpg" style="width: 100%; padding: 0.7rem; border: 1px solid #334155; border-radius: 5px; background: #0f172a; color: #e2e8f0;" required>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #94a3b8;">Description:</label>
+                        <textarea id="description" placeholder="Enter project description" style="width: 100%; padding: 0.7rem; border: 1px solid #334155; border-radius: 5px; background: #0f172a; color: #e2e8f0; height: 80px;"></textarea>
+                    </div>
+                    <div style="text-align: center;">
+                        <button type="submit" style="background: linear-gradient(135deg, #00ccff 0%, #00a3cc 100%); color: #0f172a; border: none; padding: 0.8rem 2rem; border-radius: 5px; cursor: pointer; font-weight: 600; margin-right: 0.5rem;">Submit</button>
+                        <button type="button" id="cancelBtn" style="background: #475569; color: white; border: none; padding: 0.8rem 2rem; border-radius: 5px; cursor: pointer;">Cancel</button>
+                    </div>
+                </form>
+            `;
+            
+            overlay.appendChild(modal);
+            document.body.appendChild(overlay);
+            
+            // Handle form submission
+            document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                let domain = document.getElementById('domain').value.trim();
+                const title = document.getElementById('title').value;
+                const price = document.getElementById('price').value;
+                const image = document.getElementById('image').value;
+                const description = document.getElementById('description').value;
+                
+                // Normalize the domain URL to ensure it has the protocol
+                if (domain && !/^https?:\/\//i.test(domain)) {
+                    domain = 'https://' + domain;
+                }
+                
+                // Validate the domain format
+                try {
+                    new URL(domain);
+                } catch (err) {
+                    alert('Please enter a valid domain URL (e.g., example.com or https://example.com)');
+                    return;
+                }
+                
+                // Create project object with the selected category
+                const project = {
+                    domain,
+                    title,
+                    image,
+                    price: parseFloat(price),
+                    category: selectedCategory, // Use the selected category
+                    description,
+                    id: Date.now() // Unique ID
+                };
+                
+                try {
+                    // Send to server
+                    const response = await fetch('/api/projects', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(project)
+                    });
+                    
+                    if (response.ok) {
+                        // Update localStorage to trigger refresh
+                        localStorage.setItem('projectsUpdated', Date.now().toString());
+                        
+                        // Close modal and refresh projects
+                        document.body.removeChild(overlay);
+                        
+                        // Force a page refresh to show the new project
+                        location.reload();
+                        
+                        alert('Project uploaded successfully!');
+                    } else {
+                        alert('Failed to upload project');
+                    }
+                } catch (error) {
+                    console.error('Error uploading project:', error);
+                    alert('Error uploading project');
+                }
+            });
+            
+            // Handle cancel button
+            document.getElementById('cancelBtn').addEventListener('click', function() {
+                document.body.removeChild(overlay);
+            });
+        }
+
+    </script>
+    
+</body>
+</html>
